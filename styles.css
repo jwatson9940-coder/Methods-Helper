@@ -734,3 +734,51 @@ footer {
 .exp-step-micro-body {
   font-size: 13px; line-height: 1.7; color: var(--text);
 }
+.dtopic-content-block, .rtopic-content-block, .ltopic-content-block, .ctopic-content-block, .itopic-content-block { display: none; }
+.dtopic-content-block.active, .rtopic-content-block.active, .ltopic-content-block.active, .ctopic-content-block.active, .itopic-content-block.active { display: block; }
+
+/* ── WACE BANK FILTERS + RANDOM QUESTION ── */
+.wace-random-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(108,99,255,0.16), rgba(67,233,123,0.08));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.wace-random-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.wace-random-panel p { color: var(--muted); font-size: 13px; line-height: 1.6; max-width: 680px; }
+.wace-random-status { margin-top: 10px; font-size: 13px; color: var(--gold); font-weight: 600; }
+.wace-random-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.wace-filter-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px 4px;
+  margin-bottom: 14px;
+}
+.wace-filter-section.compact { padding-bottom: 4px; }
+.wace-filter-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.wace-q-card.random-selected {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px rgba(255,209,102,0.25), 0 14px 40px rgba(255,209,102,0.10);
+}
+@media (max-width: 720px) {
+  .wace-random-panel { flex-direction: column; align-items: stretch; }
+  .wace-random-actions { justify-content: flex-start; }
+}
